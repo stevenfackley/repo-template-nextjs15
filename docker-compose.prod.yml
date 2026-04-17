@@ -1,0 +1,12 @@
+services:
+  {{PROJECT_NAME}}:
+    image: ${IMAGE_REF}
+    container_name: {{PROJECT_NAME}}
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: always
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
