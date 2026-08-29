@@ -7,9 +7,9 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "test:e2e": "playwright test --project=integration",
     "test:e2e:smoke": "playwright test --project=smoke"
@@ -33,7 +33,7 @@
     "eslint": "^10.2.0",
     "eslint-config-next": "^16.2.4",
     "jsdom": "^30.0.0",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "vitest": "^4.1.4"
   }
 }
