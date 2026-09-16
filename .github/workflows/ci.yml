@@ -11,8 +11,9 @@ concurrency:
 
 jobs:
   ci:
+    if: github.repository != 'stevenfackley/repo-template-nextjs15'
     uses: stevenfackley/gh-actions/.github/workflows/ci-node.yml@v1
     with:
-      project-name: {{PROJECT_NAME}}
+      project-name: "{{PROJECT_NAME}}"
       node-version: "22"
     secrets: inherit
