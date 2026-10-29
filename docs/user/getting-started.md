@@ -6,7 +6,7 @@ Node 22+, or Docker Desktop.
 ## Run (native)
 
 ```bash
-npm ci
+npm install   # first run creates package-lock.json — commit it
 npm run dev
 ```
 

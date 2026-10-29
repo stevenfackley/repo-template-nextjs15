@@ -1,4 +1,4 @@
-# Next.js 15 standalone output. Non-root, node:22-alpine.
+# Next.js 16 standalone output. Non-root, node:26-alpine.
 
 FROM node:26-alpine AS deps
 WORKDIR /app
