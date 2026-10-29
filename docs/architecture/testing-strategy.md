@@ -12,5 +12,4 @@ Runs on PR. Health + home page.
 ## E2E integration (playwright, `integration` project)
 Runs on `main`. Full scenarios; can be slow.
 
-## Full nightly
-Cron job — all projects + cross-browser.
+No nightly or cross-browser run exists: both playwright projects are Desktop Chrome and no workflow is scheduled.

@@ -5,7 +5,7 @@
 ```bash
 npm run dev               # Turbopack dev server
 npm run build             # Production build (standalone output)
-npm run lint              # next lint
+npm run lint              # eslint .
 npm run typecheck         # tsc --noEmit
 npm run test              # vitest (unit)
 npm run test:e2e:smoke    # playwright smoke project

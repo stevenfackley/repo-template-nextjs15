@@ -1,7 +1,7 @@
 # {{PROJECT_NAME}} — System Design Document
 
 ## Stack
-Next.js 15 (App Router, standalone output), React 19, TypeScript strict.
+Next.js 16 (App Router, standalone output), React 19, TypeScript strict.
 Deploy target: {{DEPLOY_TARGET}}.
 
 ## Rendering strategy
@@ -13,7 +13,7 @@ Deploy target: {{DEPLOY_TARGET}}.
 <!-- Stores, ORM, migrations. -->
 
 ## Object storage (opt-in)
-- S3-compatible — Cloudflare R2 in prod, MinIO locally. Reached via `src/lib/storage.ts`.
+- S3-compatible — Cloudflare R2 in prod, RustFS locally. Reached via `src/lib/storage.ts`.
 - Env: `S3_ENDPOINT`, `S3_REGION=auto`, `S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY`, `S3_BUCKET`, `S3_FORCE_PATH_STYLE=true`, optional `S3_PUBLIC_BASE_URL`.
 - `getStorage()` throws on first use when unconfigured — no runtime cost until a feature actually uses it.
 

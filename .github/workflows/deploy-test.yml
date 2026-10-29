@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-push:
-    if: ${{ (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success') && github.repository != 'stevenfackley/repo-template-nextjs15' }}
+    if: ${{ (github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_commit.author.name != 'dependabot[bot]')) && github.repository != 'stevenfackley/repo-template-nextjs15' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

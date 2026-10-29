@@ -1,16 +1,16 @@
 # {{PROJECT_NAME}}
 
-{{FLAVOR}} — Next.js 15 + React 19 + TypeScript.
+{{FLAVOR}} — Next.js 16 + React 19 + TypeScript.
 
 ## Quick start
 
 ```bash
-npm ci
+npm install   # no lockfile is committed; the first install creates it — commit it
 npm run dev
 # open http://localhost:3000
 ```
 
-Full dev-env: see `C:\Users\steve\projects\DEV_SETUP_GUIDE.md`.
+Full dev-env: see [docs/user/getting-started.md](docs/user/getting-started.md).
 
 ## Docker
 
